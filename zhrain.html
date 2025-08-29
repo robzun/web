@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>zhrain</title>
+  <link rel="icon" type="image/x-icon" href="img\roberto.jpg">
+  <meta name="theme-color" content="#0f172a" />
+  <script src="https://kit.fontawesome.com/1e671d93a3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="sr-only" href="#contenido">Saltar al contenido principal</a>
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand" aria-label="Inicio">
+        <span></span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#biografia">Biografía</a>
+        <a href="#lanzamientos">Lanzamientos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker"></p>
+          <h1>zhrain</h1>
+          <p class="lead">Artista y productor musical. En esta página encontrarás un poco sobre mí y los proyectos en los que he trabajado.</p>
+        </div>
+        <div class="bio-card">
+          <a href="index.html">
+          <div class="avatar">
+            <img src="img\zhrain.jpg" alt="Foto de zhrain." width="100%">
+          </div>
+        </a>  
+        </div>
+      </div>
+    </section>
+
+    <section id="biografia" class="section">
+      <div class="container bio">
+        <div>
+          <h2>Biografía</h2>
+          <p>Soy un artista con casi 6 años de experiencia. He publicado más de 30 canciones hasta la fecha. Actualmente estoy trabajando en mi segundo álbum de estudio.</p>
+          <p>También me dedico a la producción musical. Además de mis propias canciones, he producido proyectos para bandas y artistas locales.</p>
+        </div>
+        <div>
+        <aside>
+          <h3 style="margin-top:0">Plataformas</h3>
+            <a class="btn" href="https://open.spotify.com/artist/3kV018MgaeCIRIIGlZvHTP?si=MY2IQQn-STqcegH8dnx2kg", target="_blank">Spotify</a>
+            <a class="btn" href="https://music.apple.com/us/artist/zhrain/1819822087", target="_blank">Apple Music</a>
+            <a class="btn" href="https://youtube.com/@zzhrain?si=rHE_k7qmON3NhqYr", target="_blank">YouTube</a>
+        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="lanzamientos" class="section" aria-labelledby="titulo-lanzamientos">
+      <div class="container">
+        <div style="display:flex; align-items:end; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+          <div>
+            <h2 id="titulo-lanzamientos">Lanzamientos</h2>
+            <p>Mis proyectos publicados más recientemente.</p>
+          </div>
+        </div>
+
+        <a href="https://open.spotify.com/track/779nuRvqh6EpSoEiLabogJ?si=9b31672745f84da7" target="_blank">
+        <div class="grid" style="margin-top: 1rem;">
+          <article class="card">
+            <div class="thumb">
+                <img src="img\seguir vivo cover.jpg" alt="Portada de Seguir Vivo.">
+            </div>
+            <div class="card-body">
+              <div class="tag" aria-label="Tipo de proyecto">Single</div>
+              <h3 style="margin:.25rem 0 0">Seguir Vivo</h3>
+              <p style="color:var(--muted); margin:0">La canción más reciente que he publicado. Lanzada en marzo de 2025.</p>
+            </div>
+          </article>
+          </a>
+
+          <a href="https://open.spotify.com/track/47I7lW7UkBO0unwDtYeUiZ?si=a86b4f2330fe45fd" target="_blank">
+          <article class="card">
+            <div class="thumb">
+                <img src="img\21 cover.jpg" alt="Portada de Veintiuno.">
+            </div>
+            <div class="card-body">
+              <div class="tag">LP</div>
+              <h3 style="margin:.25rem 0 0">Veintiuno</h3>
+              <p style="color:var(--muted); margin:0">Mi primer álbum de estudio. Lanzado en agosto de 2024.</p>
+            </div>
+          </article>
+          </a>
+
+          <a href="https://open.spotify.com/track/0lHp9RHBx4z8OwAXYDiCLa?si=0f087e33d0ad488e" target="_blank">
+          <article class="card">
+            <div class="thumb">
+                <img src="img\la peor cover.jpg" alt="Portada de La Peor Clae de Persona.">
+            </div>
+            <div class="card-body">
+              <div class="tag">EP</div>
+              <h3 style="margin:.25rem 0 0">La Peor Clase de Persona</h3>
+              <p style="color:var(--muted); margin:0">EP de 5 canciones. Lanzado en marzo de 2023</p>
+            </div>
+          </article>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container" style="display:grid; gap:1rem; justify-items:start;">
+        <h2>Contacto</h2>
+            <a href="mailto:tako.boi05@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> tako.boi05@gmail.com</a>
+            <a href="https://instagram.com/zzhrain" target="_blank"><i class="fa-brands fa-instagram"></i> @zzhrain</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap;">
+      <p>© <span id="year"></span> zhrain.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

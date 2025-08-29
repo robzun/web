@@ -13,7 +13,7 @@
   <header>
     <div class="container nav">
       <a href="#" class="brand" aria-label="Inicio">
-        <span>Portafolio</span>
+        <span></span>
       </a>
       <nav class="menu" aria-label="Principal">
         <a href="#biografia">Biografía</a>
@@ -29,10 +29,10 @@
         <div>
           <p class="kicker"></p>
           <h1>Roberto Zúñiga Román</h1>
-          <p class="lead">Desarrollador de software y músico. En esta página encontrarás un poco sobre mí y los proyectos en los que he trabajado.</p>
+          <p class="lead">Desarrollador de software. En esta página encontrarás un poco sobre mí y los proyectos en los que he trabajado.</p>
         </div>
         <div class="bio-card">
-          <a href="https://open.spotify.com/artist/3kV018MgaeCIRIIGlZvHTP?si=SDBuaQcLSNeqcVzhPYsC4Q", target="_blank">
+          <a href="zhrain.html">
           <div class="avatar">
             <img src="img\roberto.jpg" alt="Foto de Roberto." width="100%">
           </div>
@@ -46,19 +46,13 @@
         <div>
           <h2>Biografía</h2>
           <p>Soy un estudiante de ingeniería de software en la Universidad Veracruzana. Actualmente curso el 7mo semestre. He participado en varios proyectos a lo largo de mi estancia en la UV. Tengo experiencia en desarrollo de sistemas en realidad virtual y me apasiona el diseño de UX.</p>
-          <p>También me dedico a la producción musical. Además de mis propias canciones, he producido proyectos para bandas y artistas locales. He lanzado alrededor de 30 canciones hasta la fecha y estoy trabajando en mi segundo álbum de estudio.</p>
         </div>
         <div>
-        <h2 style="margin-top:0">Habilidades</h2>
         <aside class="bio-card">
-          <h3 style="margin-top:0">Software</h3>
+          <h3 style="margin-top:0">Habilidades</h3>
             <li>Unity Engine</li>
             <li>Figma</li>
             <li>C#</li>
-          <h3>Música</h3>
-            <li>FL Studio</li>
-            <li>Multi-instrumentista</li>
-            <li>Prod, mix y master</li>
         </aside>
         </div>
       </div>
@@ -87,12 +81,12 @@
 
           <article class="card">
             <div class="thumb">
-                <img src="img\faust.jpg" alt="Logo de Faust.">
+                <img src="img\bandmate.png" alt="Logo de Bandmate.">
             </div>
             <div class="card-body">
-              <div class="tag">Álbum</div>
-              <h3 style="margin:.25rem 0 0">Faust</h3>
-              <p style="color:var(--muted); margin:0">Álbum debut de una banda local llamada Faust. Actualmente sigue en producción.</p>
+              <div class="tag">Diseño/UX</div>
+              <h3 style="margin:.25rem 0 0">Bandmate</h3>
+              <p style="color:var(--muted); margin:0">Prototipo de alta fidalidad realizado en Figma.</p>
             </div>
           </article>
 
@@ -113,9 +107,9 @@
     <section id="contacto" class="section">
       <div class="container" style="display:grid; gap:1rem; justify-items:start;">
         <h2>Contacto</h2>
-            <a href="mailto:robzun03@gmail.com"><i class="fa-solid fa-envelope"></i> robzun03@gmail.com</a>
-            <a href="https://instagram.com/zzhrain"><i class="fa-brands fa-instagram"></i> @zzhrain</a>
-            <a href="https://github.com/robzun"><i class="fa-brands fa-github"></i> robzun</a>
+            <a href="mailto:robzun03@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> robzun03@gmail.com</a>
+            <a href="https://github.com/robzun" target="_blank"><i class="fa-brands fa-github"></i> robzun</a>
+            <a href="https://www.linkedin.com/in/robzun" target="_blank"><i class="fa-brands fa-linkedin"></i> Roberto Zúñiga Román</a>
       </div>
     </section>
   </main>
@@ -128,18 +122,6 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    const root = document.documentElement;
-    const key = 'pref-theme';
-    const saved = localStorage.getItem(key);
-    if (saved === 'light') root.setAttribute('data-theme', 'light');
-
-    document.getElementById('themeToggle').addEventListener('click', () => {
-      const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-      if (next === 'dark') root.removeAttribute('data-theme');
-      else root.setAttribute('data-theme', 'light');
-      localStorage.setItem(key, next);
-    });
   </script>
 </body>
 </html>
